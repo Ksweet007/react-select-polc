@@ -146,6 +146,78 @@ export const KallindaOptions = [
   }
 ];
 
+export const manyOptions = [
+  {
+    value: "assignment1Many",
+    label: "#123, 168612 - Perform Design LTD",
+    isFixed: true
+  },
+  {
+    value: "assignment2Many",
+    label: "#345, 169012 - Perform Services",
+    isFixed: true
+  },
+  {
+    value: "assignment3Many",
+    label: "#123, 168612 - Perform Design LTD",
+    isFixed: true
+  },
+  {
+    value: "assignment4Many",
+    label: "#345, 169012 - Perform Services",
+    isFixed: true
+  },
+  {
+    value: "assignment5Many",
+    label: "#123, 168612 - Perform Design LTD",
+    isFixed: true
+  },
+  {
+    value: "assignment6Many",
+    label: "#345, 169012 - Perform Services",
+    isFixed: true
+  }
+];
+
+export const connieOptions2 = [
+  {
+    value: "assignment2Connie",
+    label: "#123, 168612 - Perform Design LTD",
+    isFixed: true
+  },
+  {
+    value: "assignment2Connie",
+    label: "#345, 169012 - Perform Services",
+    isFixed: true
+  }
+];
+
+export const connieOptions3 = [
+  {
+    value: "assignment3Connie",
+    label: "#123, 168612 - Perform Design LTD",
+    isFixed: true
+  },
+  {
+    value: "assignment3Connie",
+    label: "#345, 169012 - Perform Services",
+    isFixed: true
+  }
+];
+
+export const connieOptions4 = [
+  {
+    value: "assignment4Connie",
+    label: "#123, 168612 - Perform Design LTD",
+    isFixed: true
+  },
+  {
+    value: "assignment4Connie",
+    label: "#345, 169012 - Perform Services",
+    isFixed: true
+  }
+];
+
 export const groupedPeople = [
   {
     label: "Connie Allen",
@@ -158,5 +230,21 @@ export const groupedPeople = [
   {
     label: "Kallinda S Chevoy",
     options: KallindaOptions
+  },
+  {
+    label: "Lots O'People",
+    options: manyOptions
+  },
+  {
+    label: "Connie2",
+    options: connieOptions2
+  },
+  {
+    label: "Connie3",
+    options: connieOptions3
+  },
+  {
+    label: "Connie4",
+    options: connieOptions4
   }
 ];

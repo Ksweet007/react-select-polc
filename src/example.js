@@ -36,6 +36,27 @@ const filterOptions = (candidate, input) => {
   }
   return true;
 };
+function buildList(shouldBuildList, count) {
+  if (!shouldBuildList) {
+    return groupedPeople;
+  }
+  let retList = [];
+  for (var i = 0; i < count; i++) {
+    let group = {
+      label: `Connie Allen ${i}`,
+      options: [
+        {
+          value: `connie${i}`,
+          label: "#123, 168612 - Perform Design LTD",
+          isFixed: true
+        }
+      ]
+    };
+    retList.push(group);
+  }
+  return retList;
+}
+
 const formatGroupLabel = (data) => (
   <div style={groupStyles}>
     <span>{data.label}</span>
@@ -52,7 +73,8 @@ const formatOptionLabel = (data) => (
 
 export default () => (
   <Select
-    options={groupedPeople}
+    //options={groupedPeople}
+    options={buildList(false, 100)}
     formatGroupLabel={formatGroupLabel}
     formatOptionLabel={formatOptionLabel}
     filterOption={filterOptions}
